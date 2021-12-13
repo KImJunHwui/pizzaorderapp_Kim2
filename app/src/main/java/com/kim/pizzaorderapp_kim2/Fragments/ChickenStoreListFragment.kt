@@ -14,7 +14,7 @@ class ChickenStoreListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_Chicken_store_list, container, false)
+        return inflater.inflate(R.layout.fragment_chicken_store_list, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
