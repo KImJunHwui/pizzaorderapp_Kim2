@@ -1,5 +1,7 @@
 package com.kim.pizzaorderapp_kim2
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -19,6 +21,12 @@ class ViewStoreDetailActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
+
+       callPhoneBtn.setOnClickListener {
+            val myUri = Uri.parse("tel:${mStoreData.phoneNum}")
+           val myIntent = Intent(Intent.ACTION_CALL, myUri)
+           startActivity(myIntent)
+       }
 
     }
 
